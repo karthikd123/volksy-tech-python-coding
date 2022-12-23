@@ -1,24 +1,9 @@
 #!/usr/bin/python3
-#include <stdlib.h>
-#include <time.h>
-#include <studio.h>
-/**
-  *main- prints if number is positive, zero or negetive
-  *Return: Always (Success)
-  *
-*/
-int main(void)
-
-{	int n;
-	srand (time(0));
-	n= rand() - RAND_MAX / 2;
- 	if (n>0)
-	{ printf("%d is positive\n", n);
-	}
-	else if (n== 0)
-	{ printf("%d is zero\n", n);
-	}
-	else{ printf("%d is negetive\n", n);
-	}
-	return (0);
-}
+import random
+number = random.randint(-10, 10)
+if number > 0:
+      	print("{} is positive" .format(number))
+elif number == 0:
+	print("{} is zero" .format(number))
+else:
+	print("is negative" .format(number))  
