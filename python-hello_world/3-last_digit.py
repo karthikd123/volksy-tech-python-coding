@@ -1,23 +1,13 @@
 #!/usr/bin/python3
-int main(void)
-	{
-	int number, lastd;
-	import(tim(0));
-	number=import() - random.randint;
-	lastd =number % 10;
-	if (lastd> 5)
-	{
-	printf("Last digit of %d is %d and is greater than 5\n", number, lastd);
-	}
-	else is (lastd == 0)
-	{
-	printf("Last digit of %d is %d and is 0\n", number, lastd);
-	}
-	else if (lastd < 6 & lastd !="0")
-	{
-	printf("Last digit of %d is %d and is less than 6 and not 0\n",number,
-	lastd);
-	}
-	return(0);
-	}
-	
+import random
+
+number = random.randint(-10000, 10000)
+last = number % 10
+if number < 0: 
+    a = a - 10
+if number > 5:
+    print('Last digit of {} is {} and is less than 5 and is greater than 5' .format(number, last))
+elif a == 0:
+    print('Last digit of {} is {} and is less than 5 and is 0' .format(number, last)) 
+else number > 0:
+    print('Last digit of {} is {} and is less than 5 and is less than 6 and not 0' .format(number, last))
